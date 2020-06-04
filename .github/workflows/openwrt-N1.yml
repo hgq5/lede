@@ -121,9 +121,9 @@ jobs:
           # EOF
 
           # 编译UEFI固件:
-          cat >> .config <<EOF
-          CONFIG_TARGET_ROOTFS_TARGZ=y
-          EOF
+           cat >> .config <<EOF
+           CONFIG_TARGET_ROOTFS_TARGZ=y
+           EOF
 
           # IPv6支持:
           # cat >> .config <<EOF
@@ -189,9 +189,9 @@ jobs:
            CONFIG_PACKAGE_luci-app-adguardhome=y
            CONFIG_PACKAGE_luci-app-passwall=y
            CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ipt2socks=y
-         # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks is not set
+           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks is not set
            CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR=y
-         # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks is not set
+           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks is not set
            CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks=y
            CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray=y
            CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y
